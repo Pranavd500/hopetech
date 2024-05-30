@@ -1,9 +1,4 @@
 import React from "react";
-import DoctorCard from "./DoctorCard";
-import profile1 from "../Assets/profile-1.png";
-import profile2 from "../Assets/profile-2.png";
-import profile3 from "../Assets/profile-3.png";
-import profile4 from "../Assets/profile-4.png";
 import "../Styles/Doctors.css";
 
 function Doctors() {
@@ -11,46 +6,17 @@ function Doctors() {
     <div className="doctor-section" id="doctors">
       <div className="dt-title-content">
         <h3 className="dt-title">
-          <span>Meet Our Doctors</span>
+          <span>Empower Your Future with Technotrench</span>
         </h3>
 
         <p className="dt-description">
-          Meet our exceptional team of specialist doctors, dedicated to
-          providing top-notch healthcare services at Health Plus. Trust in their
-          knowledge and experience to lead you towards a healthier and happier
-          life.
+          At Technotrench, we're dedicated to shaping the tech leaders of
+          tomorrow. Our internship program is your gateway to unlocking endless
+          opportunities and realizing your full potential in the dynamic world
+          of technology. Dive into hands-on learning, gain valuable experience,
+          and propel your career forward with us. Choose Technotrench and embark
+          on a journey of innovation and growth.
         </p>
-      </div>
-
-      <div className="dt-cards-content">
-        <DoctorCard
-          img={profile1}
-          name="Dr. Kathryn Murphy"
-          title="General Surgeons"
-          stars="4.9"
-          reviews="1800"
-        />
-        <DoctorCard
-          img={profile2}
-          name="Dr. Jacob Jones"
-          title="Hematologists"
-          stars="4.8"
-          reviews="700"
-        />
-        <DoctorCard
-          img={profile3}
-          name="Dr. Jenny Wilson"
-          title="Endocrinologists"
-          stars="4.7"
-          reviews="450"
-        />
-        <DoctorCard
-          img={profile4}
-          name="Dr. Albert Flores"
-          title="Hematologists"
-          stars="4.8"
-          reviews="500"
-        />
       </div>
     </div>
   );

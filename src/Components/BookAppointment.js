@@ -1,18 +1,15 @@
 import React from "react";
-import Doctor from "../Assets/doctor-book-appointment.png";
+import Doctor from "../Assets/card3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleCheck,
   faCalendarCheck,
 } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate  } from "react-router-dom";
 import "../Styles/BookAppointment.css";
 
 function BookAppointment() {
-  const navigate = useNavigate();
-
   const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+    window.open("https://forms.gle/TwnCMFxfVDeumqjz9", "_blank");
   };
 
   return (
@@ -23,26 +20,30 @@ function BookAppointment() {
 
       <div className="ba-text-content">
         <h3 className="ba-title">
-          <span>Why Choose Health</span>
+          <span>Why Choose TechnoTrench</span>
         </h3>
         <p className="ba-description">
-          Discover the reasons to choose Health Plus for your healthcare needs.
-          Experience expert care, convenience, and personalized solutions,
-          making your well-being our top priority. Join us on a journey to
-          better health and a happier life.
+          At Technotrench, we stand out as your top choice for IT services and
+          consultancy due to our relentless dedication to innovation, expertise,
+          and client satisfaction. With a proven track record of delivering
+          cutting-edge solutions, we offer:
         </p>
 
         <p className="ba-checks ba-check-first">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Best Professional Doctors
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />{" "}
+          Elite Mentorship Network
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Emergency Care
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />{" "}
+          Accelerate Your Career
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> 24/7 Support Live Chat
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />{" "}
+          Effortless Enrollment
         </p>
         <p className="ba-checks ba-check-last">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Enrollment Easy and Quick
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />{" "}
+          Responsive Support
         </p>
 
         <button
@@ -50,7 +51,7 @@ function BookAppointment() {
           type="button"
           onClick={handleBookAppointmentClick}
         >
-          <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
+          <FontAwesomeIcon icon={faCalendarCheck} /> Apply
         </button>
       </div>
     </div>

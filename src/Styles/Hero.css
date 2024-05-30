@@ -78,8 +78,8 @@
 }
 /* Image section */
 .hero-image-section {
-    width: 40%;
-    max-width: 100%;
+    width: 25%;
+    max-width: 75%;
     text-align: center;
 }
 .hero-image1 {

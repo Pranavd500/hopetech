@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/doctor-picture.png";
+import Doctor from "../Assets/soften-removebg-preview (1).png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../Styles/Hero.css";
 
 function Hero() {
+  // eslint-disable-next-line
   const navigate = useNavigate();
   const [goUp, setGoUp] = useState(false);
 
@@ -14,7 +15,7 @@ function Hero() {
   };
 
   const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+    window.open("https://forms.gle/TwnCMFxfVDeumqjz9", "_blank");
   };
 
   useEffect(() => {
@@ -36,38 +37,21 @@ function Hero() {
     <div className="section-container">
       <div className="hero-section">
         <div className="text-section">
-          <p className="text-headline">❤️ Health comes first</p>
+          <p className="text-headline">❤️ Development takes center stage</p>
           <h2 className="text-title">
-            Find your Doctor and make an Appointments
+            Welcome to Technotrench, where innovation meets transformation.
           </h2>
           <p className="text-descritpion">
-            Talk to online doctors and get medical advice, online prescriptions,
-            refills and medical notes within minutes. On-demand healthcare
-            services at your fingertips.
+            Embark on your internship journey with Technotrench and turn your
+            potential into professional excellence!
           </p>
           <button
             className="text-appointment-btn"
             type="button"
             onClick={handleBookAppointmentClick}
           >
-            <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
+            <FontAwesomeIcon icon={faCalendarCheck} /> Apply
           </button>
-          <div className="text-stats">
-            <div className="text-stats-container">
-              <p>145k+</p>
-              <p>Receive Patients</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>50+</p>
-              <p>Expert Doctors</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>10+</p>
-              <p>Years of Experience</p>
-            </div>
-          </div>
         </div>
 
         <div className="hero-image-section">
