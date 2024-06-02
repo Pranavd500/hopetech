@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import Image from "next/image";
 import Doctor from "../Assets/card3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,7 +17,7 @@ function BookAppointment() {
   return (
     <div className="ba-section">
       <div className="ba-image-content">
-        <img src={Doctor} alt="Doctor Group" className="ba-image1" />
+        <Image src={Doctor} alt="Doctor Group" className="ba-image1" />
       </div>
 
       <div className="ba-text-content">
@@ -30,19 +32,19 @@ function BookAppointment() {
         </p>
 
         <p className="ba-checks ba-check-first">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />{" "}
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />
           Elite Mentorship Network
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />{" "}
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />
           Accelerate Your Career
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />{" "}
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />
           Effortless Enrollment
         </p>
         <p className="ba-checks ba-check-last">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />{" "}
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />
           Responsive Support
         </p>
 

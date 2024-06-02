@@ -1,8 +1,9 @@
+"use client";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import "../Styles/Navbar.css";
-import { Link } from "react-router-dom";
+import "@/Styles/Navbar.css";
+import Link from "next/link";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -14,7 +15,7 @@ function Navbar() {
   return (
     <div className="navbar-section">
       <h1 className="navbar-title">
-        <Link to="/">
+        <Link href="/">
           TechnoTrench <span className="navbar-sign"></span>
         </Link>
       </h1>
@@ -22,7 +23,7 @@ function Navbar() {
       {/* Desktop */}
       <ul className="navbar-items">
         <li>
-          <Link to="/" className="navbar-links">
+          <Link href="/" className="navbar-links">
             Home
           </Link>
         </li>
@@ -42,7 +43,7 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#doctors" className="navbar-links">
+          <a href="#contact" className="navbar-links">
             Contact
           </a>
         </li>
@@ -56,7 +57,7 @@ function Navbar() {
 
         <ul className="mobile-navbar-links">
           <li>
-            <Link onClick={openNav} to="/">
+            <Link onClick={openNav} href="/">
               Home
             </Link>
           </li>

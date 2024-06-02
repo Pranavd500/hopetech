@@ -1,5 +1,6 @@
+"use client";
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import "../Styles/LegalDocs.css";
 
 function LegalDocs() {
@@ -10,7 +11,7 @@ function LegalDocs() {
   return (
     <div className="legal-section-title">
       <h1 className="legal-siteTitle">
-        <Link to="/">
+        <Link href="/">
           TechnoTrench <span className="legal-siteSign"></span>
         </Link>
       </h1>

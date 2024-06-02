@@ -1,13 +1,13 @@
+"use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import Doctor from "../Assets/soften-removebg-preview (1).png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
 import "../Styles/Hero.css";
 
 function Hero() {
   // eslint-disable-next-line
-  const navigate = useNavigate();
   const [goUp, setGoUp] = useState(false);
 
   const scrollToTop = () => {
@@ -55,7 +55,7 @@ function Hero() {
         </div>
 
         <div className="hero-image-section">
-          <img className="hero-image1" src={Doctor} alt="Doctor" />
+          <Image className="hero-image1" src={Doctor} alt="Doctor" />
         </div>
       </div>
 
