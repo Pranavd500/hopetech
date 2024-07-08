@@ -1,13 +1,14 @@
-// pages/_app.js
-
-import Layout from "@/Components/Layout";
-import "../styles/globals.css"; // Ensure this path is correct
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>TechnoTrench</title>
+      </Head>
       <Component {...pageProps} />
-    </Layout>
+    </>
   );
 }
 

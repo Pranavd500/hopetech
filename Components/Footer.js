@@ -20,7 +20,6 @@ function Footer() {
               latest tools and technologies.
             </p>
           </div>
-          <SubscribeNewsletter />
         </div>
 
         <div className="ft-list">
@@ -77,7 +76,10 @@ function Footer() {
         {/* Social Media Icons */}
         <ul className="ft-social-links">
           <li>
-            <a href="https://instagram.com">
+            <a
+              href="
+https://www.instagram.com/technotrench24?igsh=MTg5d2F5d2ViYzAw"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -88,7 +90,7 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com">
+            <a href="https://www.linkedin.com/in/techno-trench-72017330a/?originalSubdomain=in">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -99,7 +101,7 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://telegram.org">
+            <a href="https://t.me/+HIfvFSo-qj4xNzI1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
