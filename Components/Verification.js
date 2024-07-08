@@ -27,7 +27,7 @@ function Verification() {
 
   return (
     <div className="verification-container">
-      <h1>Your Certificate are verified </h1>
+      <h1>Your Certificate is verified </h1>
       <h2>Certificate Verification</h2>
       <input
         type="text"
