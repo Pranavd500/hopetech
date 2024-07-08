@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Doctor from "../Assets/soften-removebg-preview (1).png";
+import Doctor from "../Assets/front1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Hero.css";
@@ -15,7 +15,10 @@ function Hero() {
   };
 
   const handleBookAppointmentClick = () => {
-    window.open("https://forms.gle/TwnCMFxfVDeumqjz9", "_blank");
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSd3wtMTMlPjq--H3XeqYzVoTSyRQBc61L2oUBIBouXZR4_NNA/viewform?usp=sf_link",
+      "_blank"
+    );
   };
 
   useEffect(() => {

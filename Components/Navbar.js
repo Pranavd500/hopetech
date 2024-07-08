@@ -1,15 +1,21 @@
+// components/Navbar.js
+
 "use client";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import "@/Styles/Navbar.css";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import "@/styles/Navbar.css";
 import Link from "next/link";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
 
-  const openNav = () => {
+  const toggleNav = () => {
     setNav(!nav);
+  };
+
+  const closeNav = () => {
+    setNav(false);
   };
 
   return (
@@ -47,44 +53,49 @@ function Navbar() {
             Contact
           </a>
         </li>
+        <li>
+          <Link href="/verification" className="navbar-links">
+            Verification
+          </Link>
+        </li>
       </ul>
 
       {/* Mobile */}
       <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
-        <div onClick={openNav} className="mobile-navbar-close">
-          <FontAwesomeIcon icon={faXmark} className="hamb-icon" />
+        <div onClick={toggleNav} className="mobile-navbar-close">
+          <FontAwesomeIcon icon={faTimes} className="hamb-icon" />
         </div>
 
         <ul className="mobile-navbar-links">
           <li>
-            <Link onClick={openNav} href="/">
+            <Link href="/" onClick={closeNav}>
               Home
             </Link>
           </li>
           <li>
-            <a onClick={openNav} href="#services">
+            <a href="#services" onClick={closeNav}>
               Services
             </a>
           </li>
           <li>
-            <a onClick={openNav} href="#about">
+            <a href="#about" onClick={closeNav}>
               About
             </a>
           </li>
           <li>
-            <a onClick={openNav} href="#reviews">
+            <a href="#reviews" onClick={closeNav}>
               Reviews
             </a>
           </li>
           <li>
-            <a onClick={openNav} href="#doctors">
-              Doctors
+            <a href="#contact" onClick={closeNav}>
+              Contact
             </a>
           </li>
           <li>
-            <a onClick={openNav} href="#contact">
-              Contact
-            </a>
+            <Link href="/verification" onClick={closeNav}>
+              Verification
+            </Link>
           </li>
         </ul>
       </div>
@@ -93,7 +104,7 @@ function Navbar() {
       <div className="mobile-nav">
         <FontAwesomeIcon
           icon={faBars}
-          onClick={openNav}
+          onClick={toggleNav}
           className="hamb-icon"
         />
       </div>

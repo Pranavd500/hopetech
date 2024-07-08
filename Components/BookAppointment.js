@@ -11,7 +11,10 @@ import "../Styles/BookAppointment.css";
 
 function BookAppointment() {
   const handleBookAppointmentClick = () => {
-    window.open("https://forms.gle/TwnCMFxfVDeumqjz9", "_blank");
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSd3wtMTMlPjq--H3XeqYzVoTSyRQBc61L2oUBIBouXZR4_NNA/viewform?usp=sf_link",
+      "_blank"
+    );
   };
 
   return (

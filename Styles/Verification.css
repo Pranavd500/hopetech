@@ -1,0 +1,52 @@
+/* styles/Verification.css */
+
+.verification-container {
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.verification-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.verification-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a8efd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.verification-button:hover {
+    background-color: #0073e6;
+}
+
+.verification-result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.verification-result p {
+    margin: 10px 0;
+    font-size: 16px;
+}
