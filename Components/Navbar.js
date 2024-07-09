@@ -4,7 +4,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import "@/styles/Navbar.css";
+import "@/Styles/Navbar.css";
 import Link from "next/link";
 
 function Navbar() {
@@ -34,24 +34,24 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <a href="#services" className="navbar-links">
+          <Link href="#services" className="navbar-links">
             Services
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#about" className="navbar-links">
-            About
-          </a>
+          <Link href="#services" className="navbar-links">
+            Services
+          </Link>
         </li>
         <li>
-          <a href="#reviews" className="navbar-links">
-            Reviews
-          </a>
+          <Link href="#services" className="navbar-links">
+            Services
+          </Link>
         </li>
         <li>
-          <a href="#contact" className="navbar-links">
-            Contact
-          </a>
+          <Link href="#services" className="navbar-links">
+            Services
+          </Link>
         </li>
         <li>
           <Link href="/verification" className="navbar-links">
